@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: #ee9ca7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container{
+    text-align: center;
+    justify-content: center;
+
+}
+
+.box{
+    background: #ee9ca7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    border-radius: 50px;
+}
+
+
+
+
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 20px;
+    }
+
+    button {
+        padding: 10px;
+        border: none;
+        outline: none;
+        font-family: 'Segoe UI';
+        font-size: 1.1em;
+        transition: all .5s;
+        cursor: pointer;
+        border-radius: 25px;
+    }
+
+    button:hover {
+        background-color: #a1c0d1;
+    }
+
+    button:active {
+        background-color: #111;
+    }
+
+    .bg-green {
+        background-color: #8bff4d;
+       
+        
+    }
+
+    .bg-yellow {
+        background-color: #fdea59;
+    }
+
+    .bg-red {
+        background-color: #f95656;
+    }
+
+    .waves{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        
+    }
+
+    .wave1{
+        animation: moveWave1 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes moveWave1{
+        from{
+            transform: translateX(-500px);
+        }
+    }
+
+    .wave2{
+        animation: moveWave2 3s 1.2s ease-in-out infinite alternate;
+    }
+
+    @keyframes moveWave2{
+        from{
+            transform: translateX(-400px);
+        }
+    }
+
+    .wave3{
+        animation: moveWave3 3s 0.7s  ease-in-out infinite alternate;
+    }
+
+    @keyframes moveWave3{
+        from{
+            transform: translateX(400px);
+        }
+    }
